@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("jana0027/train-schedule")
+                    app = docker.build("janadon/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
